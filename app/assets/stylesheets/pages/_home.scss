@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+.navbar-bar {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-bar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-bar .navbar-brand img {
+  width: 40px;
+}

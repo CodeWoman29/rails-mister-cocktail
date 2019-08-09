@@ -6,7 +6,7 @@ class IngredientsController < ApplicationController
   end
 
   def create
-    @ingredient = Ingredient.new(plant_params)
+    @ingredient = Ingredient.new(ingredient_params)
     @ingredient.cocktail = @cocktail
 
     if @ingredient.save
@@ -30,8 +30,6 @@ class IngredientsController < ApplicationController
   end
 
   def ingredients_params
-    params.require(:ingredient).permit(
-      :name,
-    )
+    params.require(:ingredient).permit(:name)
   end
 end
