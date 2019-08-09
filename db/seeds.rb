@@ -9,4 +9,5 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Cocktail.create(name:"La Godinette", image_url:"http://www.recettes-bretonnes.fr/wp-content/Photos/cocktail-breton.jpg")
 

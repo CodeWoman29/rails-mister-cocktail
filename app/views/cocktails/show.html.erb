@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-bar">
   <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "" %>
+    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
   <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,9 +28,11 @@
 </div>
 
 <div class="cocktail">
-
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(
+  <%= @cocktail.image_url%>)">
     <%= @cocktail.name %>
   </div>
 
+    <%= render 'cocktails/index' %>
   <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)%>
 </div>
